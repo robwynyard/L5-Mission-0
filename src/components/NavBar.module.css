@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.NavBarContainer{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 80px;
+    font-family: "Nunito";
+}
+
+.User{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 99px;
+    font-weight: 600;
+    
+    
+}
+
+.Links{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 99px;
+    gap: 25px;
+    font-weight: 500;
+}
+
+.Links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.Links button {
+
+ 
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: .2em;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 2.5em;
+  width:  8em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+
+}
+
+
+.Hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-right: 99px;
+  padding-top: 25px;
+}
+
+.Hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+
+.MobileMenu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 99px;
+  gap: 15px;
+  background-color: white;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.MobileMenu a,
+.MobileMenu button {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+@media (max-width: 900px) {
+  .Links {
+    display: none;
+  }
+
+  .Hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .MobileMenu {
+    display: flex;
+  }
+}

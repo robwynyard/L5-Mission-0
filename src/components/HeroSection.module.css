@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.HeroSectionContainer {
+  display: flex;
+  background-image: url('../assets/images/background1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+  position: relative;
+}
+
+.HeroText {
+  font-family: "Nunito";
+  font-weight: 700;
+  margin-left: 90px;
+  margin-top: 165px;
+  line-height: 1;
+}
+
+.HeroText h3 {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.HeroText h1 {
+  font-size: 95px;
+}
+
+.searchContainer {
+  display: flex;
+  width: 400px;
+  height: 35px;
+  border: solid #b3b3b3 1px;
+  margin-top: 500px;
+  margin-left: 100px;
+  position: absolute;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0 10px;
+  border: none;
+  height: 100%;
+  font-size: 14px;
+}
+
+.searchButton {
+  background-color: #3c3c3c;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 100%;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+
+/* --------------------------- */
+/* Mobile responsiveness      */
+/* --------------------------- */
+@media (max-width: 600px) {
+
+
+  .HeroSectionContainer{
+    height: 25rem;
+  }
+
+  .HeroText {
+  font-family: "Nunito";
+  font-weight: 700;
+  margin-left: 90px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+  .HeroText h1 {
+
+    font-size: 68px;
+  }
+
+  .HeroText h3 {
+    font-size: 20px;
+  }
+
+  .searchContainer {
+    flex-direction: row;
+    width: 70%;
+    margin-top: 350px;
+    margin-left: 100px;
+  }
+
+}
