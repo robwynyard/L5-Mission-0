@@ -43,9 +43,42 @@ npm run preview
 
 ## Project Structure
 
-- `/src` - Source code directory
-- `/public` - Static assets
-- `/node_modules` - Project dependencies
+```
+mission-0/
+├── .git/                # Git repository files
+├── .gitignore           # Git ignore file
+├── .DS_Store            # macOS system file
+├── eslint.config.js     # ESLint configuration
+├── index.html          # Main HTML file
+├── node_modules/       # Project dependencies
+├── package.json        # Project configuration
+├── package-lock.json   # Dependency versions
+├── public/            # Static assets
+├── src/               # Source code directory
+│   ├── components/    # React components
+│   │   ├── CardSection.jsx      # Card-based content section
+│   │   ├── CardSection.module.css # Card section styles
+│   │   ├── Footer.jsx           # Footer component
+│   │   ├── HeroSection.jsx      # Hero banner section
+│   │   ├── HeroSection.module.css # Hero section styles
+│   │   ├── Home.jsx            # Home page component
+│   │   ├── Home.module.css     # Home page styles
+│   │   ├── NavBar.jsx          # Navigation bar component
+│   │   └── NavBar.module.css   # Navigation bar styles
+│   ├── App.jsx        # Main application component
+│   └── main.jsx       # Entry point
+└── vite.config.js     # Vite configuration
+```
+
+### Key Directories
+
+- `/src` - Contains all source code
+  - `components/` - Reusable React components
+  - `pages/` - Page-level components
+  - `styles/` - CSS/SCSS styles
+  - `utils/` - Utility functions and helpers
+- `/public` - Static assets (images, fonts, etc.)
+- `/node_modules` - Project dependencies (managed by npm)
 
 ## Technologies Used
 
