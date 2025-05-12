@@ -1,72 +1,88 @@
-# Mission 0
+# Mission 0 – Marketing Association NZ Prototype
 
-A modern web application built with Vite, React, and Material-UI.
+Welcome to **Mission 0**   
+This project is a modern web application built with **Vite**, **React**, and **Material-UI**, designed as a prototype template for the **Marketing Association of New Zealand's** digital homepage.
 
-## Project Overview
+---
 
-This project is a Vite-based React application that utilizes Material-UI for its component library. It's designed to be fast, efficient, and easy to develop with.
+## 🧭 Project Overview
 
-## Features
+This single-page application serves as a responsive, modern homepage for a digital news platform.  
+It reflects the wireframe provided by the client and is built using a current industry tech stack.  
+It includes a hero section, card-based content, and mobile responsiveness — without backend or search functionality.
 
-- Modern React application with Vite
-- Material-UI components for consistent UI
-- TypeScript support
-- Hot Module Replacement (HMR)
-- Production-ready build configuration
+> ⚠️ The search bar is part of the layout only and is not functional.
 
-## Prerequisites
+---
+## 📸 Screenshots 
 
-- Node.js (v18 or higher recommended)
-- npm or yarn package manager
+Desktop Homepage
+![Homepage Screenshot](public/screenshot1.png)
+Mobile Homepage <br>
+![Mobile Homepage Screenshot](public/screenshot.png)
 
-## Getting Started
+---
 
-1. Install dependencies:
+## 🧩 Features
+
+- ⚛️ Built with React 19 and Vite for lightning-fast performance
+- 🎨 Styled using Material-UI and modular CSS
+- 📱 Fully mobile responsive
+- ✅ Structured to support future integration with backend APIs
+
+---
+
+## 📋 Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- npm or yarn
+
+---
+
+## 🚀 Getting Started
+
 ```bash
+# 1. Clone the repository
+git clone https://github.com/robwynyard/L5-Mission-0.git
+cd L5-Mission-0
+
+# 2. Install dependencies
 npm install
-```
 
-2. Start the development server:
-```bash
+# 3. Start development server
 npm run dev
-```
 
-3. Build for production:
-```bash
+# 4. Build for production
 npm run build
 ```
+---
+## 📁 Project Structure
 
-4. Preview the production build:
-```bash
-npm run preview
 ```
-
-## Project Structure
-
-- `/src` - Source code directory
-- `/public` - Static assets
-- `/node_modules` - Project dependencies
-
-## Technologies Used
-
-- React 19.1.0
-- Vite 6.3.5
-- Material-UI 7.0.2
-- TypeScript
-- ESLint for code linting
-
-## Development
-
-The project is set up with ESLint for code quality. You can run the linter with:
-
-```bash
-npm run lint
+mission-0/
+├── .git/                # Git repository files
+├── .gitignore           # Git ignore file
+├── eslint.config.js     # ESLint configuration
+├── index.html          # Main HTML file
+├── node_modules/       # Project dependencies
+├── package.json        # Project configuration
+├── package-lock.json   # Dependency versions
+├── public/            # Static assets
+├── src/               # Source code directory
+│   ├── components/    # React components
+│   │   ├── CardSection.jsx      # Card-based content section
+│   │   ├── CardSection.module.css # Card section styles
+│   │   ├── Footer.jsx           # Footer component
+│   │   ├── HeroSection.jsx      # Hero banner section
+│   │   ├── HeroSection.module.css # Hero section styles
+│   │   ├── Home.jsx            # Home page component
+│   │   ├── Home.module.css     # Home page styles
+│   │   ├── NavBar.jsx          # Navigation bar component
+│   │   └── NavBar.module.css   # Navigation bar styles
+│   ├── pages/         # Page components
+│   ├── styles/        # CSS/SCSS styles
+│   ├── utils/         # Utility functions
+│   ├── App.jsx        # Main application component
+│   └── main.jsx       # Entry point
+└── vite.config.js     # Vite configuration
 ```
-
-## License
-
-This project is proprietary and confidential. All rights reserved.
-
-## Support
-
-For support, please contact the project maintainer.
